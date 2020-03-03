@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ProductSearch.Models.Product>
+
+@{
+    ViewBag.Title = "Product Search";
+}
+
+<br />
+<br />
+@using (Html.BeginForm("Index", "Products", FormMethod.Get))
+{
+    //the following are search options
+    <b>Search Options:</b>
+    <br />
+    <text> Platform: </text>@Html.DropDownList("platform", new SelectList(ViewBag.Platform, "", ""), "--Please select--", new { @id = "ddlPlatform" })
+    <text> Exchange: </text>@Html.DropDownList("exchCd", new SelectList(ViewBag.ExchCd, "", ""), "--Please select--", new { @id = "ddlExchCd" })
+    <b>  OR  </b>
+    @Html.RadioButton("options", "PlatformDesc") <text> Platform </text>
+    @Html.RadioButton("options", "ExchCd") <text>  Exch Code </text>
+    @Html.RadioButton("options", "ComCd")<text>  Commodity Code  </text>
+    @Html.TextBox("search") <input type="submit" name="submit" value="Search" />
+}
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PlatformDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExchCd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComCD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContractDescription)
+        </th>
+        <th></th>
+    </tr>
+    @if (Model.Count() == 0)
+    {
+        <tr><td colspan="4">Record/s not found</td></tr> }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlatformDesc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExchCd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ComCD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContractDescription)
+                </td>
+                <td></td>
+            </tr>
+        }
+    }
+
+</table>

@@ -1,0 +1,144 @@
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\ProductSearch.dll.config
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\ProductSearch.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\ProductSearch.pdb
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\csc.exe
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\csc.exe.config
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\csc.rsp
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\csi.exe
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\csi.exe.config
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\csi.rsp
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.AppContext.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Console.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.IO.Compression.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Security.Claims.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.ValueTuple.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\vbc.exe
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\vbc.exe.config
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\vbc.rsp
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\VBCSCompiler.exe
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\EntityFramework.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\EntityFramework.SqlServer.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Helpers.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Mvc.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Razor.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Webpages.Deployment.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Webpages.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Webpages.Razor.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\EntityFramework.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\EntityFramework.SqlServer.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Razor.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Webpages.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Webpages.Deployment.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Webpages.Razor.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Helpers.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\System.Web.Mvc.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\obj\Debug\ProductSearch.csproj.CoreCompileInputs.cache
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\obj\Debug\ProductSearch.csproj.CopyComplete
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\obj\Debug\ProductSearch.dll
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\obj\Debug\ProductSearch.pdb
+C:\Users\jrenato\Documents\John Files\PCI Product Search\ProductSearch\ProductSearch\obj\Debug\ProductSearch.csprojAssemblyReference.cache
+C:\Codes\SG\ProductSearch\ProductSearch\bin\ProductSearch.dll.config
+C:\Codes\SG\ProductSearch\ProductSearch\bin\ProductSearch.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\ProductSearch.pdb
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\csc.exe
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\csc.exe.config
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\csc.rsp
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\csi.exe
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\csi.exe.config
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\csi.rsp
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.AppContext.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Collections.Immutable.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Console.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.IO.Compression.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.IO.FileSystem.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.IO.Pipes.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Reflection.Metadata.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Security.AccessControl.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Security.Claims.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.ValueTuple.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Xml.XPath.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\vbc.exe
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\vbc.exe.config
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\vbc.rsp
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\VBCSCompiler.exe
+C:\Codes\SG\ProductSearch\ProductSearch\bin\roslyn\VBCSCompiler.exe.config
+C:\Codes\SG\ProductSearch\ProductSearch\bin\EntityFramework.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\EntityFramework.SqlServer.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\Microsoft.Web.Infrastructure.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Helpers.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Mvc.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Razor.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Webpages.Deployment.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Webpages.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Webpages.Razor.dll
+C:\Codes\SG\ProductSearch\ProductSearch\bin\EntityFramework.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\EntityFramework.SqlServer.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Razor.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Webpages.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Webpages.Deployment.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Webpages.Razor.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Helpers.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\System.Web.Mvc.xml
+C:\Codes\SG\ProductSearch\ProductSearch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Codes\SG\ProductSearch\ProductSearch\obj\Debug\ProductSearch.csproj.CopyComplete
+C:\Codes\SG\ProductSearch\ProductSearch\obj\Debug\ProductSearch.dll
+C:\Codes\SG\ProductSearch\ProductSearch\obj\Debug\ProductSearch.pdb

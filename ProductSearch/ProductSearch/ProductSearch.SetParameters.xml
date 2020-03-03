@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/ProductSearch_deploy" />
+  <setParameter name="ProductsDBContext-Web.config Connection String" value="metadata=res://*/Models.ProductDataModel.csdl|res://*/Models.ProductDataModel.ssdl|res://*/Models.ProductDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=10.30.5.83;initial catalog=CQGLOBALUS;uid=CQUSAPP;pwd=Phillip1234!;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+</parameters>

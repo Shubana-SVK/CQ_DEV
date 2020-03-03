@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBModels.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_Contract_Spec_Futures_Options">
+          <Key>
+            <PropertyRef Name="Com_Type" />
+            <PropertyRef Name="Exch_Cd" />
+            <PropertyRef Name="Com_Cd" />
+          </Key>
+          <Property Name="Com_Type" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="Exch_Cd" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Com_Cd" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Contract_Mon_Type" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="Val_Per_Pt" Type="decimal" Precision="14" Scale="5" Nullable="false" />
+          <Property Name="Factor" Type="tinyint" Nullable="false" />
+          <Property Name="Strike_Price_Decimal" Type="int" Nullable="false" />
+          <Property Name="Exch_Decimal" Type="int" />
+          <Property Name="Settle_Curr_Cd" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Comm_Curr_Cd" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Margin_Curr_Cd" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="OutrightMarginType" Type="char" MaxLength="1" />
+          <Property Name="SpotIM" Type="decimal" Precision="30" Scale="10" />
+          <Property Name="SpotMM" Type="decimal" Precision="30" Scale="10" />
+          <Property Name="NonSpotIM" Type="decimal" Precision="30" Scale="10" />
+          <Property Name="NonSpotMM" Type="decimal" Precision="30" Scale="10" />
+          <Property Name="Smx_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Pats_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Pats_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Pats_Cont_Type" Type="varchar" MaxLength="20" />
+          <Property Name="Pats_Decimal" Type="int" Nullable="false" />
+          <Property Name="Span_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Span_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Span_Decimal" Type="int" />
+          <Property Name="Span_Comb_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Span_Return_Comb_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="SpanProductType" Type="varchar" MaxLength="10" />
+          <Property Name="Poems_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Poems_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Poems_Decimal" Type="int" />
+          <Property Name="Contract_Nature" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="MOS_Ind" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="Reuters_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Reuters_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Reuters_Decimal" Type="int" />
+          <Property Name="Reuters_Decimal_Division" Type="decimal" Precision="20" Scale="6" />
+          <Property Name="Calyon_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Calyon_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Calyon_Decimal" Type="int" />
+          <Property Name="OptExch_Decimal" Type="int" />
+          <Property Name="GL_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="GL_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="GL_Decimal" Type="int" />
+          <Property Name="TT_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="TT_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="TT_Decimal" Type="int" />
+          <Property Name="TT_Net_Gateway" Type="varchar" MaxLength="200" />
+          <Property Name="TT_Premium_Decimal" Type="int" />
+          <Property Name="MarginMethod" Type="varchar" MaxLength="1" />
+          <Property Name="PatsBOAExchCd" Type="varchar" MaxLength="20" />
+          <Property Name="Pats_Spread_Com_Cd" Type="varchar" MaxLength="50" />
+          <Property Name="Created_By" Type="varchar" MaxLength="50" />
+          <Property Name="Created_Datetime" Type="datetime" />
+          <Property Name="Modified_By" Type="varchar" MaxLength="50" />
+          <Property Name="Modified_Datetime" Type="datetime" />
+          <Property Name="OPEN_OUTCRY_CODE" Type="varchar" MaxLength="10" />
+          <Property Name="OPTION_EXERCISE_STYLE" Type="varchar" MaxLength="15" />
+          <Property Name="LARGE_TRADER_RPTLIMIT" Type="int" />
+          <Property Name="Large_Trader_ExchID" Type="varchar" MaxLength="15" />
+          <Property Name="LTR_StrikePrice_Decimal" Type="int" />
+          <Property Name="CFTC_RptLimit" Type="int" />
+          <Property Name="CFTC_ExchID" Type="varchar" MaxLength="15" />
+          <Property Name="CFTC_StrikePrice_Decimal" Type="int" />
+          <Property Name="CFTC_Volume_Limit" Type="int" />
+          <Property Name="Reuters_Premium_Decimal" Type="int" />
+          <Property Name="Reuters_StrikePrice_Decimal" Type="int" />
+          <Property Name="CQG_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="CQG_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="CQG_Decimal" Type="int" />
+          <Property Name="CQG_Premium_Decimal" Type="int" />
+          <Property Name="PCS_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="OptionMarkToMarket" Type="char" MaxLength="1" />
+          <Property Name="CTS_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="CTS_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="CTS_Decimal" Type="int" />
+          <Property Name="CTS_Premium_Decimal" Type="int" />
+          <Property Name="NFA_Curr_Cd" Type="varchar" MaxLength="10" />
+          <Property Name="RIC_StrikePrice_Decimal" Type="int" />
+          <Property Name="Rithimic_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Rithimic_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="Rithimic_Decimal" Type="int" />
+          <Property Name="Rithimic_Premium_Decimal" Type="int" />
+          <Property Name="CME_Volume_Limit" Type="int" />
+          <Property Name="TickData" Type="decimal" Precision="30" Scale="10" />
+          <Property Name="CME_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="CME_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="CME_Decimal" Type="int" />
+          <Property Name="CME_Premium_Decimal" Type="int" />
+          <Property Name="Pats_Prem_Decimal" Type="int" />
+          <Property Name="GlbxCd" Type="varchar" MaxLength="15" />
+          <Property Name="GlbxOptPriceDecimal" Type="int" />
+          <Property Name="GlbxOptPriceDecimalLen" Type="int" />
+          <Property Name="Reuters_Intraday_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="IRB_Com_cd" Type="varchar" MaxLength="15" />
+          <Property Name="IRB_Strike_Price_Decimal" Type="int" />
+          <Property Name="ADM_Exch_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="ADM_Com_Cd" Type="varchar" MaxLength="15" />
+          <Property Name="ADM_Strike_Price_Decimal" Type="int" />
+          <Property Name="LongRptPostion" Type="varchar" MaxLength="1" />
+          <Property Name="Price_Quotation" Type="varchar" MaxLength="15" />
+          <Property Name="Price_Quotation_Desc" Type="varchar" MaxLength="50" />
+          <Property Name="Face_Value" Type="decimal" Precision="20" Scale="6" />
+          <Property Name="Days_To_Maturity" Type="int" />
+          <Property Name="Coupon_Rate" Type="decimal" Precision="20" Scale="6" />
+          <Property Name="Payable_Dividends" Type="int" />
+          <Property Name="ICESPAN_Exch_Cd" Type="varchar" MaxLength="20" />
+          <Property Name="ICESPAN_Return_Comb_Com_Cd" Type="varchar" MaxLength="20" />
+          <Property Name="MIC_Cd" Type="varchar" MaxLength="20" />
+          <Property Name="Commodity_base" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="tb_Search_Platform">
+          <Key>
+            <PropertyRef Name="PSP_ID" />
+          </Key>
+          <Property Name="PSP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Platform_Desc" Type="varchar" MaxLength="100" />
+          <Property Name="Platform_Version" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tb_Search_Result">
+          <Key>
+            <PropertyRef Name="Result_ID" />
+          </Key>
+          <Property Name="Result_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PlatformDesc" Type="varchar" MaxLength="50" />
+          <Property Name="ExchCd" Type="varchar" MaxLength="20" />
+          <Property Name="ComCD" Type="varchar" MaxLength="20" />
+          <Property Name="ContractDescription" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="DBModelsStoreContainer">
+          <EntitySet Name="tb_Contract_Spec_Futures_Options" EntityType="Self.tb_Contract_Spec_Futures_Options" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Search_Platform" EntityType="Self.tb_Search_Platform" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Search_Result" EntityType="Self.tb_Search_Result" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBModels" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Result_ID" />
+          </Key>
+          <Property Name="Result_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PlatformDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ExchCd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ComCD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ContractDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ProductsDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Products" EntityType="DBModels.Product" />
+          <EntitySet Name="Contracts" EntityType="DBModels.Contract" />
+          <EntitySet Name="Platforms" EntityType="DBModels.Platform" />
+        </EntityContainer>
+        <EntityType Name="Contract">
+          <Key>
+            <PropertyRef Name="Com_Type" />
+            <PropertyRef Name="Exch_Cd" />
+            <PropertyRef Name="Com_Cd" />
+          </Key>
+          <Property Name="Com_Type" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="Exch_Cd" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Com_Cd" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Contract_Mon_Type" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Val_Per_Pt" Type="Decimal" Nullable="false" Precision="14" Scale="5" />
+          <Property Name="Factor" Type="Byte" Nullable="false" />
+          <Property Name="Strike_Price_Decimal" Type="Int32" Nullable="false" />
+          <Property Name="Exch_Decimal" Type="Int32" />
+          <Property Name="Settle_Curr_Cd" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Comm_Curr_Cd" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Margin_Curr_Cd" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="OutrightMarginType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="SpotIM" Type="Decimal" Precision="30" Scale="10" />
+          <Property Name="SpotMM" Type="Decimal" Precision="30" Scale="10" />
+          <Property Name="NonSpotIM" Type="Decimal" Precision="30" Scale="10" />
+          <Property Name="NonSpotMM" Type="Decimal" Precision="30" Scale="10" />
+          <Property Name="Smx_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Pats_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Pats_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Pats_Cont_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Pats_Decimal" Type="Int32" Nullable="false" />
+          <Property Name="Span_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Span_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Span_Decimal" Type="Int32" />
+          <Property Name="Span_Comb_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Span_Return_Comb_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="SpanProductType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Poems_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Poems_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Poems_Decimal" Type="Int32" />
+          <Property Name="Contract_Nature" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="MOS_Ind" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="Reuters_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Reuters_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Reuters_Decimal" Type="Int32" />
+          <Property Name="Reuters_Decimal_Division" Type="Decimal" Precision="20" Scale="6" />
+          <Property Name="Calyon_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Calyon_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Calyon_Decimal" Type="Int32" />
+          <Property Name="OptExch_Decimal" Type="Int32" />
+          <Property Name="GL_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GL_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GL_Decimal" Type="Int32" />
+          <Property Name="TT_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="TT_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="TT_Decimal" Type="Int32" />
+          <Property Name="TT_Net_Gateway" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="TT_Premium_Decimal" Type="Int32" />
+          <Property Name="MarginMethod" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="PatsBOAExchCd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Pats_Spread_Com_Cd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Created_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Created_Datetime" Type="DateTime" Precision="3" />
+          <Property Name="Modified_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Modified_Datetime" Type="DateTime" Precision="3" />
+          <Property Name="OPEN_OUTCRY_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="OPTION_EXERCISE_STYLE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="LARGE_TRADER_RPTLIMIT" Type="Int32" />
+          <Property Name="Large_Trader_ExchID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="LTR_StrikePrice_Decimal" Type="Int32" />
+          <Property Name="CFTC_RptLimit" Type="Int32" />
+          <Property Name="CFTC_ExchID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CFTC_StrikePrice_Decimal" Type="Int32" />
+          <Property Name="CFTC_Volume_Limit" Type="Int32" />
+          <Property Name="Reuters_Premium_Decimal" Type="Int32" />
+          <Property Name="Reuters_StrikePrice_Decimal" Type="Int32" />
+          <Property Name="CQG_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CQG_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CQG_Decimal" Type="Int32" />
+          <Property Name="CQG_Premium_Decimal" Type="Int32" />
+          <Property Name="PCS_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="OptionMarkToMarket" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CTS_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CTS_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CTS_Decimal" Type="Int32" />
+          <Property Name="CTS_Premium_Decimal" Type="Int32" />
+          <Property Name="NFA_Curr_Cd" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="RIC_StrikePrice_Decimal" Type="Int32" />
+          <Property Name="Rithimic_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Rithimic_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Rithimic_Decimal" Type="Int32" />
+          <Property Name="Rithimic_Premium_Decimal" Type="Int32" />
+          <Property Name="CME_Volume_Limit" Type="Int32" />
+          <Property Name="TickData" Type="Decimal" Precision="30" Scale="10" />
+          <Property Name="CME_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CME_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CME_Decimal" Type="Int32" />
+          <Property Name="CME_Premium_Decimal" Type="Int32" />
+          <Property Name="Pats_Prem_Decimal" Type="Int32" />
+          <Property Name="GlbxCd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GlbxOptPriceDecimal" Type="Int32" />
+          <Property Name="GlbxOptPriceDecimalLen" Type="Int32" />
+          <Property Name="Reuters_Intraday_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="IRB_Com_cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="IRB_Strike_Price_Decimal" Type="Int32" />
+          <Property Name="ADM_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="ADM_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="ADM_Strike_Price_Decimal" Type="Int32" />
+          <Property Name="LongRptPostion" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="Price_Quotation" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Price_Quotation_Desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Face_Value" Type="Decimal" Precision="20" Scale="6" />
+          <Property Name="Days_To_Maturity" Type="Int32" />
+          <Property Name="Coupon_Rate" Type="Decimal" Precision="20" Scale="6" />
+          <Property Name="Payable_Dividends" Type="Int32" />
+          <Property Name="ICESPAN_Exch_Cd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ICESPAN_Return_Comb_Com_Cd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MIC_Cd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Commodity_base" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Platform">
+          <Key>
+            <PropertyRef Name="PSP_ID" />
+          </Key>
+          <Property Name="PSP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Platform_Desc" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Platform_Version" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBModelsStoreContainer" CdmEntityContainer="ProductsDBContext">
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="DBModels.Product">
+              <MappingFragment StoreEntitySet="tb_Search_Result">
+                <ScalarProperty Name="Result_ID" ColumnName="Result_ID" />
+                <ScalarProperty Name="PlatformDesc" ColumnName="PlatformDesc" />
+                <ScalarProperty Name="ExchCd" ColumnName="ExchCd" />
+                <ScalarProperty Name="ComCD" ColumnName="ComCD" />
+                <ScalarProperty Name="ContractDescription" ColumnName="ContractDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contracts">
+            <EntityTypeMapping TypeName="DBModels.Contract">
+              <MappingFragment StoreEntitySet="tb_Contract_Spec_Futures_Options">
+                <ScalarProperty Name="Commodity_base" ColumnName="Commodity_base" />
+                <ScalarProperty Name="MIC_Cd" ColumnName="MIC_Cd" />
+                <ScalarProperty Name="ICESPAN_Return_Comb_Com_Cd" ColumnName="ICESPAN_Return_Comb_Com_Cd" />
+                <ScalarProperty Name="ICESPAN_Exch_Cd" ColumnName="ICESPAN_Exch_Cd" />
+                <ScalarProperty Name="Payable_Dividends" ColumnName="Payable_Dividends" />
+                <ScalarProperty Name="Coupon_Rate" ColumnName="Coupon_Rate" />
+                <ScalarProperty Name="Days_To_Maturity" ColumnName="Days_To_Maturity" />
+                <ScalarProperty Name="Face_Value" ColumnName="Face_Value" />
+                <ScalarProperty Name="Price_Quotation_Desc" ColumnName="Price_Quotation_Desc" />
+                <ScalarProperty Name="Price_Quotation" ColumnName="Price_Quotation" />
+                <ScalarProperty Name="LongRptPostion" ColumnName="LongRptPostion" />
+                <ScalarProperty Name="ADM_Strike_Price_Decimal" ColumnName="ADM_Strike_Price_Decimal" />
+                <ScalarProperty Name="ADM_Com_Cd" ColumnName="ADM_Com_Cd" />
+                <ScalarProperty Name="ADM_Exch_Cd" ColumnName="ADM_Exch_Cd" />
+                <ScalarProperty Name="IRB_Strike_Price_Decimal" ColumnName="IRB_Strike_Price_Decimal" />
+                <ScalarProperty Name="IRB_Com_cd" ColumnName="IRB_Com_cd" />
+                <ScalarProperty Name="Reuters_Intraday_Com_Cd" ColumnName="Reuters_Intraday_Com_Cd" />
+                <ScalarProperty Name="GlbxOptPriceDecimalLen" ColumnName="GlbxOptPriceDecimalLen" />
+                <ScalarProperty Name="GlbxOptPriceDecimal" ColumnName="GlbxOptPriceDecimal" />
+                <ScalarProperty Name="GlbxCd" ColumnName="GlbxCd" />
+                <ScalarProperty Name="Pats_Prem_Decimal" ColumnName="Pats_Prem_Decimal" />
+                <ScalarProperty Name="CME_Premium_Decimal" ColumnName="CME_Premium_Decimal" />
+                <ScalarProperty Name="CME_Decimal" ColumnName="CME_Decimal" />
+                <ScalarProperty Name="CME_Com_Cd" ColumnName="CME_Com_Cd" />
+                <ScalarProperty Name="CME_Exch_Cd" ColumnName="CME_Exch_Cd" />
+                <ScalarProperty Name="TickData" ColumnName="TickData" />
+                <ScalarProperty Name="CME_Volume_Limit" ColumnName="CME_Volume_Limit" />
+                <ScalarProperty Name="Rithimic_Premium_Decimal" ColumnName="Rithimic_Premium_Decimal" />
+                <ScalarProperty Name="Rithimic_Decimal" ColumnName="Rithimic_Decimal" />
+                <ScalarProperty Name="Rithimic_Com_Cd" ColumnName="Rithimic_Com_Cd" />
+                <ScalarProperty Name="Rithimic_Exch_Cd" ColumnName="Rithimic_Exch_Cd" />
+                <ScalarProperty Name="RIC_StrikePrice_Decimal" ColumnName="RIC_StrikePrice_Decimal" />
+                <ScalarProperty Name="NFA_Curr_Cd" ColumnName="NFA_Curr_Cd" />
+                <ScalarProperty Name="CTS_Premium_Decimal" ColumnName="CTS_Premium_Decimal" />
+                <ScalarProperty Name="CTS_Decimal" ColumnName="CTS_Decimal" />
+                <ScalarProperty Name="CTS_Com_Cd" ColumnName="CTS_Com_Cd" />
+                <ScalarProperty Name="CTS_Exch_Cd" ColumnName="CTS_Exch_Cd" />
+                <ScalarProperty Name="OptionMarkToMarket" ColumnName="OptionMarkToMarket" />
+                <ScalarProperty Name="PCS_Com_Cd" ColumnName="PCS_Com_Cd" />
+                <ScalarProperty Name="CQG_Premium_Decimal" ColumnName="CQG_Premium_Decimal" />
+                <ScalarProperty Name="CQG_Decimal" ColumnName="CQG_Decimal" />
+                <ScalarProperty Name="CQG_Com_Cd" ColumnName="CQG_Com_Cd" />
+                <ScalarProperty Name="CQG_Exch_Cd" ColumnName="CQG_Exch_Cd" />
+                <ScalarProperty Name="Reuters_StrikePrice_Decimal" ColumnName="Reuters_StrikePrice_Decimal" />
+                <ScalarProperty Name="Reuters_Premium_Decimal" ColumnName="Reuters_Premium_Decimal" />
+                <ScalarProperty Name="CFTC_Volume_Limit" ColumnName="CFTC_Volume_Limit" />
+                <ScalarProperty Name="CFTC_StrikePrice_Decimal" ColumnName="CFTC_StrikePrice_Decimal" />
+                <ScalarProperty Name="CFTC_ExchID" ColumnName="CFTC_ExchID" />
+                <ScalarProperty Name="CFTC_RptLimit" ColumnName="CFTC_RptLimit" />
+                <ScalarProperty Name="LTR_StrikePrice_Decimal" ColumnName="LTR_StrikePrice_Decimal" />
+                <ScalarProperty Name="Large_Trader_ExchID" ColumnName="Large_Trader_ExchID" />
+                <ScalarProperty Name="LARGE_TRADER_RPTLIMIT" ColumnName="LARGE_TRADER_RPTLIMIT" />
+                <ScalarProperty Name="OPTION_EXERCISE_STYLE" ColumnName="OPTION_EXERCISE_STYLE" />
+                <ScalarProperty Name="OPEN_OUTCRY_CODE" ColumnName="OPEN_OUTCRY_CODE" />
+                <ScalarProperty Name="Modified_Datetime" ColumnName="Modified_Datetime" />
+                <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+                <ScalarProperty Name="Created_Datetime" ColumnName="Created_Datetime" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Pats_Spread_Com_Cd" ColumnName="Pats_Spread_Com_Cd" />
+                <ScalarProperty Name="PatsBOAExchCd" ColumnName="PatsBOAExchCd" />
+                <ScalarProperty Name="MarginMethod" ColumnName="MarginMethod" />
+                <ScalarProperty Name="TT_Premium_Decimal" ColumnName="TT_Premium_Decimal" />
+                <ScalarProperty Name="TT_Net_Gateway" ColumnName="TT_Net_Gateway" />
+                <ScalarProperty Name="TT_Decimal" ColumnName="TT_Decimal" />
+                <ScalarProperty Name="TT_Com_Cd" ColumnName="TT_Com_Cd" />
+                <ScalarProperty Name="TT_Exch_Cd" ColumnName="TT_Exch_Cd" />
+                <ScalarProperty Name="GL_Decimal" ColumnName="GL_Decimal" />
+                <ScalarProperty Name="GL_Com_Cd" ColumnName="GL_Com_Cd" />
+                <ScalarProperty Name="GL_Exch_Cd" ColumnName="GL_Exch_Cd" />
+                <ScalarProperty Name="OptExch_Decimal" ColumnName="OptExch_Decimal" />
+                <ScalarProperty Name="Calyon_Decimal" ColumnName="Calyon_Decimal" />
+                <ScalarProperty Name="Calyon_Com_Cd" ColumnName="Calyon_Com_Cd" />
+                <ScalarProperty Name="Calyon_Exch_Cd" ColumnName="Calyon_Exch_Cd" />
+                <ScalarProperty Name="Reuters_Decimal_Division" ColumnName="Reuters_Decimal_Division" />
+                <ScalarProperty Name="Reuters_Decimal" ColumnName="Reuters_Decimal" />
+                <ScalarProperty Name="Reuters_Com_Cd" ColumnName="Reuters_Com_Cd" />
+                <ScalarProperty Name="Reuters_Exch_Cd" ColumnName="Reuters_Exch_Cd" />
+                <ScalarProperty Name="MOS_Ind" ColumnName="MOS_Ind" />
+                <ScalarProperty Name="Contract_Nature" ColumnName="Contract_Nature" />
+                <ScalarProperty Name="Poems_Decimal" ColumnName="Poems_Decimal" />
+                <ScalarProperty Name="Poems_Com_Cd" ColumnName="Poems_Com_Cd" />
+                <ScalarProperty Name="Poems_Exch_Cd" ColumnName="Poems_Exch_Cd" />
+                <ScalarProperty Name="SpanProductType" ColumnName="SpanProductType" />
+                <ScalarProperty Name="Span_Return_Comb_Com_Cd" ColumnName="Span_Return_Comb_Com_Cd" />
+                <ScalarProperty Name="Span_Comb_Com_Cd" ColumnName="Span_Comb_Com_Cd" />
+                <ScalarProperty Name="Span_Decimal" ColumnName="Span_Decimal" />
+                <ScalarProperty Name="Span_Com_Cd" ColumnName="Span_Com_Cd" />
+                <ScalarProperty Name="Span_Exch_Cd" ColumnName="Span_Exch_Cd" />
+                <ScalarProperty Name="Pats_Decimal" ColumnName="Pats_Decimal" />
+                <ScalarProperty Name="Pats_Cont_Type" ColumnName="Pats_Cont_Type" />
+                <ScalarProperty Name="Pats_Com_Cd" ColumnName="Pats_Com_Cd" />
+                <ScalarProperty Name="Pats_Exch_Cd" ColumnName="Pats_Exch_Cd" />
+                <ScalarProperty Name="Smx_Com_Cd" ColumnName="Smx_Com_Cd" />
+                <ScalarProperty Name="NonSpotMM" ColumnName="NonSpotMM" />
+                <ScalarProperty Name="NonSpotIM" ColumnName="NonSpotIM" />
+                <ScalarProperty Name="SpotMM" ColumnName="SpotMM" />
+                <ScalarProperty Name="SpotIM" ColumnName="SpotIM" />
+                <ScalarProperty Name="OutrightMarginType" ColumnName="OutrightMarginType" />
+                <ScalarProperty Name="Margin_Curr_Cd" ColumnName="Margin_Curr_Cd" />
+                <ScalarProperty Name="Comm_Curr_Cd" ColumnName="Comm_Curr_Cd" />
+                <ScalarProperty Name="Settle_Curr_Cd" ColumnName="Settle_Curr_Cd" />
+                <ScalarProperty Name="Exch_Decimal" ColumnName="Exch_Decimal" />
+                <ScalarProperty Name="Strike_Price_Decimal" ColumnName="Strike_Price_Decimal" />
+                <ScalarProperty Name="Factor" ColumnName="Factor" />
+                <ScalarProperty Name="Val_Per_Pt" ColumnName="Val_Per_Pt" />
+                <ScalarProperty Name="Contract_Mon_Type" ColumnName="Contract_Mon_Type" />
+                <ScalarProperty Name="Com_Cd" ColumnName="Com_Cd" />
+                <ScalarProperty Name="Exch_Cd" ColumnName="Exch_Cd" />
+                <ScalarProperty Name="Com_Type" ColumnName="Com_Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Platforms">
+            <EntityTypeMapping TypeName="DBModels.Platform">
+              <MappingFragment StoreEntitySet="tb_Search_Platform">
+                <ScalarProperty Name="Platform_Version" ColumnName="Platform_Version" />
+                <ScalarProperty Name="Platform_Desc" ColumnName="Platform_Desc" />
+                <ScalarProperty Name="PSP_ID" ColumnName="PSP_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

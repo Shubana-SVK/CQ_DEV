@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModels" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Result_ID" />
+    </Key>
+    <Property Name="Result_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlatformDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ExchCd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ComCD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ContractDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ProductsDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="DBModels.Product" />
+    <EntitySet Name="Contracts" EntityType="DBModels.Contract" />
+    <EntitySet Name="Platforms" EntityType="DBModels.Platform" />
+  </EntityContainer>
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="Com_Type" />
+      <PropertyRef Name="Exch_Cd" />
+      <PropertyRef Name="Com_Cd" />
+    </Key>
+    <Property Name="Com_Type" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Exch_Cd" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Com_Cd" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Contract_Mon_Type" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Val_Per_Pt" Type="Decimal" Nullable="false" Precision="14" Scale="5" />
+    <Property Name="Factor" Type="Byte" Nullable="false" />
+    <Property Name="Strike_Price_Decimal" Type="Int32" Nullable="false" />
+    <Property Name="Exch_Decimal" Type="Int32" />
+    <Property Name="Settle_Curr_Cd" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Comm_Curr_Cd" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Margin_Curr_Cd" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="OutrightMarginType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SpotIM" Type="Decimal" Precision="30" Scale="10" />
+    <Property Name="SpotMM" Type="Decimal" Precision="30" Scale="10" />
+    <Property Name="NonSpotIM" Type="Decimal" Precision="30" Scale="10" />
+    <Property Name="NonSpotMM" Type="Decimal" Precision="30" Scale="10" />
+    <Property Name="Smx_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Pats_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Pats_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Pats_Cont_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pats_Decimal" Type="Int32" Nullable="false" />
+    <Property Name="Span_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Span_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Span_Decimal" Type="Int32" />
+    <Property Name="Span_Comb_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Span_Return_Comb_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="SpanProductType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Poems_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Poems_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Poems_Decimal" Type="Int32" />
+    <Property Name="Contract_Nature" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="MOS_Ind" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Reuters_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Reuters_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Reuters_Decimal" Type="Int32" />
+    <Property Name="Reuters_Decimal_Division" Type="Decimal" Precision="20" Scale="6" />
+    <Property Name="Calyon_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Calyon_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Calyon_Decimal" Type="Int32" />
+    <Property Name="OptExch_Decimal" Type="Int32" />
+    <Property Name="GL_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="GL_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="GL_Decimal" Type="Int32" />
+    <Property Name="TT_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TT_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TT_Decimal" Type="Int32" />
+    <Property Name="TT_Net_Gateway" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TT_Premium_Decimal" Type="Int32" />
+    <Property Name="MarginMethod" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="PatsBOAExchCd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pats_Spread_Com_Cd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Created_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Created_Datetime" Type="DateTime" Precision="3" />
+    <Property Name="Modified_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Modified_Datetime" Type="DateTime" Precision="3" />
+    <Property Name="OPEN_OUTCRY_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="OPTION_EXERCISE_STYLE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="LARGE_TRADER_RPTLIMIT" Type="Int32" />
+    <Property Name="Large_Trader_ExchID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="LTR_StrikePrice_Decimal" Type="Int32" />
+    <Property Name="CFTC_RptLimit" Type="Int32" />
+    <Property Name="CFTC_ExchID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CFTC_StrikePrice_Decimal" Type="Int32" />
+    <Property Name="CFTC_Volume_Limit" Type="Int32" />
+    <Property Name="Reuters_Premium_Decimal" Type="Int32" />
+    <Property Name="Reuters_StrikePrice_Decimal" Type="Int32" />
+    <Property Name="CQG_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CQG_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CQG_Decimal" Type="Int32" />
+    <Property Name="CQG_Premium_Decimal" Type="Int32" />
+    <Property Name="PCS_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="OptionMarkToMarket" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CTS_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CTS_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CTS_Decimal" Type="Int32" />
+    <Property Name="CTS_Premium_Decimal" Type="Int32" />
+    <Property Name="NFA_Curr_Cd" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RIC_StrikePrice_Decimal" Type="Int32" />
+    <Property Name="Rithimic_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Rithimic_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Rithimic_Decimal" Type="Int32" />
+    <Property Name="Rithimic_Premium_Decimal" Type="Int32" />
+    <Property Name="CME_Volume_Limit" Type="Int32" />
+    <Property Name="TickData" Type="Decimal" Precision="30" Scale="10" />
+    <Property Name="CME_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CME_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CME_Decimal" Type="Int32" />
+    <Property Name="CME_Premium_Decimal" Type="Int32" />
+    <Property Name="Pats_Prem_Decimal" Type="Int32" />
+    <Property Name="GlbxCd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="GlbxOptPriceDecimal" Type="Int32" />
+    <Property Name="GlbxOptPriceDecimalLen" Type="Int32" />
+    <Property Name="Reuters_Intraday_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="IRB_Com_cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="IRB_Strike_Price_Decimal" Type="Int32" />
+    <Property Name="ADM_Exch_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ADM_Com_Cd" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ADM_Strike_Price_Decimal" Type="Int32" />
+    <Property Name="LongRptPostion" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Quotation" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Price_Quotation_Desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Face_Value" Type="Decimal" Precision="20" Scale="6" />
+    <Property Name="Days_To_Maturity" Type="Int32" />
+    <Property Name="Coupon_Rate" Type="Decimal" Precision="20" Scale="6" />
+    <Property Name="Payable_Dividends" Type="Int32" />
+    <Property Name="ICESPAN_Exch_Cd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ICESPAN_Return_Comb_Com_Cd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MIC_Cd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Commodity_base" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Platform">
+    <Key>
+      <PropertyRef Name="PSP_ID" />
+    </Key>
+    <Property Name="PSP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Platform_Desc" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Platform_Version" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>
